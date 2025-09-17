@@ -1,4 +1,3 @@
-import javax.imageio.IIOException;
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
@@ -22,7 +21,7 @@ public class Main {
         if (esWindows) {
             editor ="notepad";
         } else {
-            editor = "gedit";
+            editor = "gnome-text-editor";
         }
 
         ProcessBuilder pbuilder = new ProcessBuilder(editor, archivo.getAbsolutePath());
