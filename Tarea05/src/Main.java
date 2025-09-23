@@ -6,31 +6,27 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner teclado = new Scanner(System.in);
-        String continuar = "";
+        String opcion = "";
 
         while(true) {
             System.out.println("Itroduce el comando y sus parametros o 'salir' para cerrar el programa");
-            continuar = teclado.nextLine();
+            opcion = teclado.nextLine();
 
-            if (continuar.equals("salir") ) {
-                System.out.println("Saliendo del programa...");
-                teclado.close();
+            if (opcion.equals("salir") ) {
+                System.out.println("Fin del programa");
                 break;
             }
 
             try {
-                Process proceso = new ProcessBuilder(continuar).start();
-                InputStreamReader reader1 = new InputStreamReader(proceso.getInputStream(),"UTF-8");
+                ProcessBuilder pb = new ProcessBuilder(opcion.split(" "));
+                pb.inheritIO();
 
-                int valor = reader1.read();
-                while (valor != -1) {
-                    System.out.print((char) valor);
-                    valor = reader1.read();
-                }
-                reader1.close();
 
-                int exitCode = proceso.waitFor();
-                System.out.println("Proceso terminado, codigo de salida: " + exitCode);
+                Process p = pb.start();
+                int exitCode = p.waitFor();
+
+                System.out.println("\nProceso terminado, codigo de finalización: " + exitCode);
+                System.out.println("Nombre del programa: " + opcion + "\n");
             } catch (IOException |InterruptedException e) {
                 throw new RuntimeException(e);
             }
