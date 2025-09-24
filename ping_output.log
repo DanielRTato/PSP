@@ -1,0 +1,12 @@
+[OK] 
+[OK] Haciendo ping a google.com [142.250.184.174] con 32 bytes de datos:
+[OK] Respuesta desde 142.250.184.174: bytes=32 tiempo=23ms TTL=117
+[OK] Respuesta desde 142.250.184.174: bytes=32 tiempo=26ms TTL=117
+[OK] Respuesta desde 142.250.184.174: bytes=32 tiempo=24ms TTL=117
+[OK] Respuesta desde 142.250.184.174: bytes=32 tiempo=25ms TTL=117
+[OK] 
+[OK] Estad�sticas de ping para 142.250.184.174:
+[OK]     Paquetes: enviados = 4, recibidos = 4, perdidos = 0
+[OK]     (0% perdidos),
+[OK] Tiempos aproximados de ida y vuelta en milisegundos:
+[OK]     M�nimo = 23ms, M�ximo = 26ms, Media = 24ms
