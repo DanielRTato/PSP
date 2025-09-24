@@ -13,7 +13,9 @@ public class Lanzador {
         try {
          pb.inheritIO();
          Process p = pb.start();
-         p.waitFor();
+         int exitCode =  p.waitFor();
+
+         System.out.println("Operación completada. Codigo de salida: " + exitCode);
 
         } catch (IOException | InterruptedException e) {
             System.out.println("Error " + e);
