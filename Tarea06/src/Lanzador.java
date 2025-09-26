@@ -13,18 +13,13 @@ public class Lanzador {
 
     /**
      * Recibe un host e intenta hacerle ping 4 veces
-     * @param host direccion a la que hacer ping
+     * @param comando direccion y instruccion
      */
-    public static void hacerPing (String host) {
-        String[] comando;
-        File logGood = new File("ping_output.log");
-        File logError = new File("ping_error.log");
+    public static void lanzaComando(String[] comando) {
+//        String[] comando;
+       File logGood = new File("ping_output.log");
+       File logError = new File("ping_error.log");
 
-        if (esWindows()) {
-            comando = new String[]{"ping", "-n", "4", host};
-        } else {
-            comando = new String[]{"ping", "-c", "4", host};
-        }
         ProcessBuilder pb = new ProcessBuilder(comando);
 
         try {
