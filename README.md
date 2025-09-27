@@ -1,7 +1,5 @@
 # PSP - Ejercicios 2º DAM
 
-Este repositorio contiene ejercicios de la asignatura de Procesos y Servicios en 2º de DAM. Cada carpeta contiene una tarea distinta; aquí tienes el detalle y explicación de cada una:
-
 ## Estructura y explicación de tareas
 
 - **Tarea02**  
