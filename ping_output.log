@@ -1,0 +1,84 @@
+[OK] 
+[OK] Haciendo ping a google.com [142.250.184.174] con 32 bytes de datos:
+[OK] Respuesta desde 142.250.184.174: bytes=32 tiempo=22ms TTL=117
+[OK] Respuesta desde 142.250.184.174: bytes=32 tiempo=22ms TTL=117
+[OK] Respuesta desde 142.250.184.174: bytes=32 tiempo=22ms TTL=117
+[OK] Respuesta desde 142.250.184.174: bytes=32 tiempo=26ms TTL=117
+[OK] 
+[OK] Estad�sticas de ping para 142.250.184.174:
+[OK]     Paquetes: enviados = 4, recibidos = 4, perdidos = 0
+[OK]     (0% perdidos),
+[OK] Tiempos aproximados de ida y vuelta en milisegundos:
+[OK]     M�nimo = 22ms, M�ximo = 26ms, Media = 23ms
+[OK] 
+[OK] Haciendo ping a git-scm.com [172.66.149.185] con 32 bytes de datos:
+[OK] Respuesta desde 172.66.149.185: bytes=32 tiempo=38ms TTL=54
+[OK] Respuesta desde 172.66.149.185: bytes=32 tiempo=37ms TTL=54
+[OK] Respuesta desde 172.66.149.185: bytes=32 tiempo=40ms TTL=54
+[OK] Respuesta desde 172.66.149.185: bytes=32 tiempo=37ms TTL=54
+[OK] 
+[OK] Estad�sticas de ping para 172.66.149.185:
+[OK]     Paquetes: enviados = 4, recibidos = 4, perdidos = 0
+[OK]     (0% perdidos),
+[OK] Tiempos aproximados de ida y vuelta en milisegundos:
+[OK]     M�nimo = 37ms, M�ximo = 40ms, Media = 38ms
+[OK] 
+[OK] Traza a la direcci�n google.com [142.250.184.174]
+[OK] sobre un m�ximo de 30 saltos:
+[OK] 
+[OK]   1    <1 ms    <1 ms    <1 ms  192.168.0.1 
+[OK]   2     5 ms     5 ms     6 ms  10.2.0.1 
+[OK]   3     6 ms     6 ms     5 ms  76.15.26.77.dynamic.reverse-mundo-r.com [77.26.15.76] 
+[OK]   4     6 ms     5 ms     5 ms  61.17.26.77.dynamic.reverse-mundo-r.com [77.26.17.61] 
+[OK]   5     *        8 ms     8 ms  62.17.26.77.dynamic.reverse-mundo-r.com [77.26.17.62] 
+[OK]   6    19 ms    19 ms    19 ms  ix-be-7-700.ecore1.dvs-bilbao.as6453.net [80.231.157.133] 
+[OK]   7    23 ms    21 ms    24 ms  if-ae-8-2.tcore1.wv6-madrid.as6453.net [5.23.28.134] 
+[OK]   8    23 ms    23 ms    24 ms  173.194.121.30 
+[OK]   9    24 ms    23 ms    23 ms  108.170.252.253 
+[OK]  10    25 ms    23 ms    24 ms  142.250.213.125 
+[OK]  11    23 ms    23 ms    23 ms  mad07s23-in-f14.1e100.net [142.250.184.174] 
+[OK] 
+[OK] Traza completa.
+[OK] Servidor:  232.11.26.77.dynamic.reverse-mundo-r.com
+[OK] Address:  77.26.11.232
+[OK] 
+[OK] Nombre:  git-scm.com
+[OK] Addresses:  2606:4700:10::ac42:95b9
+[OK] 	  2606:4700:10::6814:2fae
+[OK] 	  172.66.149.185
+[OK] 	  104.20.47.174
+[OK] 
+[OK] 
+[OK] Haciendo ping a google.com [142.250.184.174] con 32 bytes de datos:
+[OK] Respuesta desde 142.250.184.174: bytes=32 tiempo=23ms TTL=117
+[OK] Respuesta desde 142.250.184.174: bytes=32 tiempo=23ms TTL=117
+[OK] Respuesta desde 142.250.184.174: bytes=32 tiempo=23ms TTL=117
+[OK] Respuesta desde 142.250.184.174: bytes=32 tiempo=25ms TTL=117
+[OK] 
+[OK] Estad�sticas de ping para 142.250.184.174:
+[OK]     Paquetes: enviados = 4, recibidos = 4, perdidos = 0
+[OK]     (0% perdidos),
+[OK] Tiempos aproximados de ida y vuelta en milisegundos:
+[OK]     M�nimo = 23ms, M�ximo = 25ms, Media = 23ms
+[OK] 
+[OK] Traza a la direcci�n git-scm.com [172.66.149.185]
+[OK] sobre un m�ximo de 30 saltos:
+[OK] 
+[OK]   1    <1 ms    <1 ms    <1 ms  192.168.0.1 
+[OK]   2     6 ms     5 ms     6 ms  10.2.0.1 
+[OK]   3     5 ms     5 ms     5 ms  78.15.26.77.dynamic.reverse-mundo-r.com [77.26.15.78] 
+[OK]   4     8 ms     7 ms    10 ms  62.17.26.77.dynamic.reverse-mundo-r.com [77.26.17.62] 
+[OK]   5    21 ms    20 ms    20 ms  ix-be-7-700.ecore1.dvs-bilbao.as6453.net [80.231.157.133] 
+[OK]   6    37 ms    35 ms    37 ms  if-ae-20-2.tcore2.sv8-highbridge.as6453.net [80.231.139.4] 
+[OK]   7     *        *        *     Tiempo de espera agotado para esta solicitud.
+[OK]   8    37 ms    42 ms    37 ms  141.101.71.137 
+[OK]   9    37 ms    37 ms    37 ms  172.66.149.185 
+[OK] 
+[OK] Traza completa.
+[OK] Servidor:  232.11.26.77.dynamic.reverse-mundo-r.com
+[OK] Address:  77.26.11.232
+[OK] 
+[OK] Nombre:  google.com
+[OK] Addresses:  2a00:1450:4003:80c::200e
+[OK] 	  142.250.184.174
+[OK] 
