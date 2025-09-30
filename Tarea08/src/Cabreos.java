@@ -10,15 +10,17 @@ public class Cabreos  extends Thread {
 
     @Override
     public void run() {
-        for (int i = 1; i <= pacienciaLvl; i++) {
-            if (i == pacienciaLvl) {
-                System.out.println("[" + nome + "] Cabreo nivel: " + i + "... ¡He llegado a mi límite!");
-            } else {
-                System.out.println("[" + nome + "] Cabreo nivel: " + i);
-            }
+        int cabreo = 0;
+        while (cabreo < pacienciaLvl) {
+            cabreo++;
 
+
+            if (cabreo == pacienciaLvl) {
+                System.out.println("[" + nome + "] Cabreo nivel: " + cabreo + "... ¡He llegado a mi límite!");
+            } else {
+                System.out.println("[" + nome + "] Cabreo nivel: " + cabreo);
+            }
         }
     }
-
 }
 
