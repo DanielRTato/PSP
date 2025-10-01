@@ -3,8 +3,15 @@ public class Lanzador extends Thread {
      String nombre;
      int numero;
     private Lanzador siguiente;
+    int numeroHilos;
 
-    public Lanzador(String nombre, int nivel) {
+    public Lanzador(String nombre, int nivel, int numeroHilos) {
+        this.nombre = nombre;
+        this.numero = nivel;
+        this.numeroHilos = numeroHilos;
+    }
+
+    public Lanzador (String nombre, int nivel) {
         this.nombre = nombre;
         this.numero = nivel;
     }
@@ -12,8 +19,8 @@ public class Lanzador extends Thread {
     @Override
     public void run() {
 
-        if (numero < 5) {
-            siguiente = new Lanzador("[Hilo-" + (numero + 1)+"]", numero + 1);
+        if (numero < numeroHilos) {
+            siguiente = new Lanzador("[Hilo-" + (numero + 1)+"]", numero + 1, numeroHilos);
             siguiente.start();
         }
 
