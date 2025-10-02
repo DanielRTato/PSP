@@ -1,19 +1,25 @@
 
 public class Lanzador extends Thread {
-     String nombre;
-     int numero;
+    String nombre;
+    int numero;
     private Lanzador siguiente;
     int numeroHilos;
 
     public Lanzador(String nombre, int nivel, int numeroHilos) {
+        super(nombre);
         this.nombre = nombre;
         this.numero = nivel;
-        this.numeroHilos = numeroHilos;
+        if (numeroHilos > 0) {
+            this.numeroHilos = numeroHilos;
+        } else {
+            this.numeroHilos = 5;
+        }
     }
 
     public Lanzador (String nombre, int nivel) {
         this.nombre = nombre;
         this.numero = nivel;
+        this.numeroHilos = 5;
     }
 
     @Override
@@ -30,7 +36,7 @@ public class Lanzador extends Thread {
                 int tiempo = (int)(Math.random() * (600 - 100 + 1)) + 100;
                 Thread.sleep(tiempo);
             } catch (InterruptedException e) {
-                System.out.println(e);
+                System.out.println("Error: " + e);
             }
         }
 
@@ -42,6 +48,6 @@ public class Lanzador extends Thread {
             }
         }
 
-        System.out.println("Acabó hilo " + nombre);
+        System.out.println("Acabó hilo [" + nombre + "]");
     }
 }
