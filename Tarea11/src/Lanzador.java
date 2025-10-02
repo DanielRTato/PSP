@@ -50,7 +50,7 @@ public class Lanzador extends Thread {
         }
 
         System.out.println("Acabó hilo [" + nombre + "]");
-        Long finEjecucion = System.currentTimeMillis();
+        long finEjecucion = System.currentTimeMillis();
         System.out.println("Tiempo total de la caída del hilo " + nombre + ": " + (finEjecucion - inicioEjecucion + "ms"));
     }
 }

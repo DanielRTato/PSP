@@ -3,6 +3,7 @@ public class Main {
 
         Lanzador Hilo1 = new Lanzador("[Hilo-1]",1, 7);
 
+
         Hilo1.start();
 
         while (Hilo1.isAlive()) {
