@@ -24,6 +24,7 @@ public class Lanzador extends Thread {
 
     @Override
     public void run() {
+        long inicioEjecucion = System.currentTimeMillis();
 
         if (numero < numeroHilos) {
             siguiente = new Lanzador("[Hilo-" + (numero + 1)+"]", numero + 1, numeroHilos);
@@ -49,5 +50,7 @@ public class Lanzador extends Thread {
         }
 
         System.out.println("Acabó hilo [" + nombre + "]");
+        Long finEjecucion = System.currentTimeMillis();
+        System.out.println("Tiempo total de la caída del hilo " + nombre + ": " + (finEjecucion - inicioEjecucion + "ms"));
     }
 }

@@ -5,6 +5,15 @@ public class Main {
 
         Hilo1.start();
 
+        while (Hilo1.isAlive()) {
+            System.out.println("[Control Central] Vigilando a " + Hilo1.getName() + " sigue activo");
+            try {
+                Thread.sleep(300);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+
 
     }
 }
