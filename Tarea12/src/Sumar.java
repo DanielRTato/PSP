@@ -5,7 +5,7 @@ public class Sumar extends Thread{
     @Override
     public void run() {
         sumarPares();
-        sumarImpares();pares();
+        sumarImpares();
         sumar34();
     }
 
